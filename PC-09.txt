@@ -1,0 +1,39 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MaterialApp(
+    home: Question9Container(),
+    debugShowCheckedModeBanner: false,
+  ));
+}
+
+class Question9Container extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text("Question 09")),
+
+      body: Center(
+        child: Container(
+          padding: EdgeInsets.all(20),
+          decoration: BoxDecoration(
+            color: Colors.lightBlue.shade100,
+            borderRadius: BorderRadius.circular(12),
+            border: Border.all(
+              color: Colors.blue,
+              width: 2,
+            ),
+          ),
+          child: Text(
+            "Hello I'm",
+            style: TextStyle(
+              fontSize: 22,
+              fontWeight: FontWeight.bold,
+              color: Colors.blue.shade900,
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
